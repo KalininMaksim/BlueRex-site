@@ -192,6 +192,15 @@ h4 {
 	background-color: #40286a;
 }
 
+/*================== section-lets ==================*/
+.section-lets {
+	background: url(../img/lets_grow.jpg) center no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+
+
 /*========== media ============*/
 
 /* Lardge Devises, Wide Screens */
