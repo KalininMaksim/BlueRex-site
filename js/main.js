@@ -1,5 +1,9 @@
 // https://youtu.be/Zjt1Kcq_a-A
 
+$(function () {
+    baguetteBox.run('.gallery');
+})
+
 var tag = document.createElement('script');
 
 tag.src = "https://www.youtube.com/iframe_api";
