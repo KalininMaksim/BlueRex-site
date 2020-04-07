@@ -265,11 +265,45 @@ h4 {
 	background-color: #4b2d7f;
 }
 
+/*================== section-reviews ==================*/
+
+.section-reviews {
+	background: url(../img/reviews_bg.png) center no-repeat;
+	background-size: cover;
+	padding: 15px 0 0;
+}
+
+.section-reviews .carousel-caption {
+	top: 5%;
+	bottom: auto;
+	text-align: left;
+}
+
+.section-reviews .blockquote {
+	font-style: italic;
+	font-weight: 500;
+	font-size: 22px;
+	position: relative;
+	padding-top: 40px;
+	padding-left: 70px;
+}
+
+.section-reviews .blockquote::before {
+	content: '“ ';
+	float: left;
+	font-size: 150px;
+	font-weight: 500;
+	font-style: italic;
+	color: #f42267;
+	position: absolute;
+	top: -40px;
+	left: -5px;
+}
+
 /*========== media ============*/
 
 /* Lardge Devises, Wide Screens */
-@media only screen and (max-width: 1200px) {
-}
+@media only screen and (max-width: 1200px) {}
 
 /* Medium Devises, Descktops */
 @media only screen and (max-width: 992px) {
@@ -282,15 +316,31 @@ h4 {
 	section {
 		padding: 50px 0;
 	}
+
+	.section-reviews h3,
+	.section-reviews h4 {
+		font-size: 25px;
+	}
+
+	.section-reviews .blockquote {
+		font-size: 17px;
+		padding-top: 20px;
+		padding-left: 35px;
+	}
+
+	.section-reviews .blockquote::before {
+		font-size: 100px;
+		top: -20px;
+		left: -15px;
+		
+	}
 }
 
 @media only screen and (max-width: 991px) {
 	.navbar-nav {
-		background: linear-gradient(
-			45deg,
-			rgba(237, 27, 51, 1) 0%,
-			rgba(68, 46, 130, 1) 100%
-		);
+		background: linear-gradient(45deg,
+				rgba(237, 27, 51, 1) 0%,
+				rgba(68, 46, 130, 1) 100%);
 		border-radius: 25px;
 		position: relative;
 		z-index: 1;
@@ -325,6 +375,19 @@ h4 {
 
 	.sectoin-progres .progress-item {
 		padding: 40px 0 40px;
+	}
+
+	.section-our-client .our-client-item {
+		margin-bottom: 20px;
+	}
+
+}
+
+@media only screen and (max-width: 576px) {
+	.section-reviews .carousel-caption {
+		position: static;
+		width: 70%;
+		margin: auto;
 	}
 }
 
