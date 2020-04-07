@@ -300,6 +300,53 @@ h4 {
 	left: -5px;
 }
 
+/*================== section-form ==================*/
+.section-form {
+	background: url(../img/form_bg.png) no-repeat center;
+	background-size: cover;
+	color: #fff;
+}
+
+.section-form h5 {
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.section-form form {
+	margin-top: 50px;
+}
+
+.section-form .btn-violet {
+	background-color: #4b2d7f;
+}
+
+.btn-violet.btn-shadow {
+	box-shadow: 0 8px 0 #a57ee9;
+}
+
+.btn-violet.btn-shadow:hover {
+	background-color: #3b2464;
+	box-shadow: 0 4px 0 #a57ee9;
+}
+
+.section-form .form-control {
+	height: 50px;
+	background-color: #f56e9b;
+	border: none;
+	color: #fff;
+	padding: 0 40px 0;
+	margin-bottom: 20px;
+}
+
+.section-form .form-control::placeholder {
+	color: #fff;
+}
+
+.section-form .form-control:focus {
+	box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
+}
+
 /*========== media ============*/
 
 /* Lardge Devises, Wide Screens */
@@ -332,7 +379,7 @@ h4 {
 		font-size: 100px;
 		top: -20px;
 		left: -15px;
-		
+
 	}
 }
 
