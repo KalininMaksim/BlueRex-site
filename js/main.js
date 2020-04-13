@@ -1,6 +1,18 @@
 // https://youtu.be/Zjt1Kcq_a-A
 
 $(function () {
+
+    // preloader function
+
+    // $(window).on('load', function () {
+    //     $('.preloader').delay(150).fadeOut('slow', function () {
+    //         $(this).attr('style', 'display: none !important')
+    //     });
+    // });
+
+
+    // galer
+
     baguetteBox.run('.gallery');
 
     $(window).scroll(function () {
@@ -16,6 +28,8 @@ $(function () {
         return false
     });
 });
+
+// castomaise youtube ifraime
 
 var tag = document.createElement('script');
 

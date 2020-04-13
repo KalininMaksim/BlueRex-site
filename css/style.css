@@ -25,16 +25,39 @@ h4 {
 	margin-bottom: 20px;
 }
 
+/*===================== preloader ===============*/
+
+/* .preloader {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 99;
+	background-color: #fefefe;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.spinner-border {
+	width: 150px;
+	height: 150px;
+
+} */
+
+/*=============================================*/
+
 .skrollToTop {
 	position: fixed;
 	bottom: 60px;
 	right: 50px;
 	border-radius: 4px;
-	/* display: none; */
+	display: none;
 	font-size: 32px;
 	height: 50px;
 	width: 50px;
-	z-index: 99999;
+	z-index: 98;
 	color: #fff;
 	transition: all 0.75s;
 	background-color: #da1757;
@@ -393,7 +416,7 @@ h4 {
 .footer {
 	background: url(../img/world_map.png) center no-repeat;
 	background-size: cover;
-	padding: 100px 0;
+	padding-top: 100px;
 	font-family: "Poppins", sans-serif;
 }
 
@@ -423,6 +446,7 @@ h4 {
 	background-color: #f6f6f6;
 	padding: 50px 0;
 	font-family: "Poppins", sans-serif;
+	margin-top: 100px;
 }
 
 .copyright a,
@@ -442,11 +466,11 @@ h4 {
 	position: absolute;
 	left: -3px;
 }
+
 /*========== media ============*/
 
 /* Lardge Devises, Wide Screens */
-@media only screen and (max-width: 1200px) {
-}
+@media only screen and (max-width: 1200px) {}
 
 /* Medium Devises, Descktops */
 @media only screen and (max-width: 992px) {
@@ -485,11 +509,9 @@ h4 {
 
 @media only screen and (max-width: 991px) {
 	.navbar-nav {
-		background: linear-gradient(
-			45deg,
-			rgba(237, 27, 51, 1) 0%,
-			rgba(68, 46, 130, 1) 100%
-		);
+		background: linear-gradient(45deg,
+				rgba(237, 27, 51, 1) 0%,
+				rgba(68, 46, 130, 1) 100%);
 		border-radius: 25px;
 		position: relative;
 		z-index: 1;
