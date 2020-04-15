@@ -124,7 +124,7 @@ h4 {
 	position: absolute;
 	top: 25%;
 	left: 5%;
-	/* min-width: 600px; */
+	max-width: 600px;
 	color: #fff;
 	padding: 20px;
 }
@@ -447,6 +447,7 @@ h4 {
 	padding: 50px 0;
 	font-family: "Poppins", sans-serif;
 	margin-top: 100px;
+	opacity: .8;
 }
 
 .copyright a,
@@ -482,7 +483,7 @@ h4 {
 
 	section,
 	.footer {
-		padding: 50px 0;
+		padding-top: 50px;
 	}
 
 	.copyright {
@@ -508,7 +509,7 @@ h4 {
 }
 
 @media only screen and (max-width: 991px) {
-	.navbar-nav {
+	.main-header .navbar-nav {
 		background: linear-gradient(45deg,
 				rgba(237, 27, 51, 1) 0%,
 				rgba(68, 46, 130, 1) 100%);
@@ -524,7 +525,7 @@ h4 {
 }
 
 /* Small Devises, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.main-header-text {
 		top: 90px;
 		left: 0;
@@ -560,6 +561,19 @@ h4 {
 		padding-left: 10px;
 		margin-right: 10px;
 	}
+
+	.pos-a {
+		position: absolute;
+		top: 45px;
+		background-color: #343a40;
+		border-radius: 5px;
+		z-index: 9;
+	}
+
+	.pos-a .nav-item .nav-link {
+		color: #fff;
+	}
+
 }
 
 @media only screen and (max-width: 576px) {
@@ -599,6 +613,11 @@ h4 {
 
 	.sectoin-progres .progress-item {
 		padding: 20px 0 20px;
+	}
+
+	.thumb {
+		float: none;
+		width: 100%;
 	}
 }
 
